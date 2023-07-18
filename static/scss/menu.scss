@@ -1,0 +1,66 @@
+#Menu {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 15;
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        ul {
+            list-style: none;
+            position: relative;
+            li {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 45px;
+                height: 45px; 
+                background-color: aqua;
+                img {
+                    width: 30px;
+                    height: 25px;
+                }
+                // &.map {
+                //     img {
+                //         width: 35px;
+                //         height: 35px;
+                //     }
+                // }
+                // &.contacts {
+                //     position: relative;
+                //     img {
+                //         position: absolute;
+                //         top: 50%;
+                //         left: 50%; 
+                //         transform: translate(-50%, -50%);
+                //         width: 25px;
+                //         height: 25px; 
+                //     }
+                // }
+            }
+        }
+        .first {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            background-color: aqua;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+            &:nth-last-child() {
+                width: 20px;
+                height: 20px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
